@@ -27,22 +27,23 @@ accept = 'text/xml'
 
 http.headers['X-ELS-APIKey'] = api_key
 http.headers['X-ELS-ResourceVersion'] = res_version
-http.headers['Accept'] = accept
+#http.headers['Accept'] = accept
 url = 'http://api.elsevier.com/content/search/index:SCIDIR-OBJECT?query=DOI(10.1016/j.bbabio.2008.10.005)'
-url2 = 'http://api.elsevier.com/content/search/index:SCIDIR-OBJECT?query=heart'
+url2 = 'https://api.elsevier.com/content/search/index:SCIDIR-OBJECT?query=heart'
 
 #http.proxy_headers['X-ELS-APIKey'] = api_key
 #http.proxy_headers['X-ELS-ResourceVersion'] = res_version
 #http.proxy_headers['Accept'] = accept
 
 #req = http.request('GET', 'http://api.elsevier.com/content/search/index:SCIDIR-OBJECT?query=DOI(10.1016/j.bbabio.2008.10.005)', headers=headers_set)
-req = http.request('GET', url2)
-print(req.status)
-print(req)
-
+#req = http.request('GET', url2)
+#print(req.status)
+#print(req)
 
 # requests
 http_proxy = "http://proxy.ifmo.ru/proxy.pac"
 proxy_dict = {"http": http_proxy}
-request = requests.get(url2, proxies=proxy_dict, headers=http.headers)
+#request = requests.get(url2, proxies=proxy_dict, headers=http.headers)
+request = requests.get(url2, headers=http.headers)
 print(request.status_code)
+print(request.content)
