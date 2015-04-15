@@ -15,7 +15,7 @@ api_resource = "https://api.elsevier.com/content/search/scopus?"
 params = 'query=title-abs-key(porn video)&sort=-citedby-count'
 url = api_resource + params
 
-max_papers = 2
+max_papers = 10
 cur_paper = 0
 max_deep = 0
 
@@ -47,19 +47,19 @@ def crawling(articles, cur_deep):
             break
 
         # article data
-        title = article['dc:title']
+        title = article['dc:title'].replace("\\", "|")
         if title in paper_ids.keys():
             continue
         cit_count = article['citedby-count']
-        authors = article['dc:creator']
+        authors = article['dc:creator'].replace("\\", "|")
         article_url = article['prism:url'].replace("http", "https").replace(":80", "")
 
         # find keywords of this article
-        article_keywords = requests.get(article_url + "?field=authkeywords", headers=headers)
-        article_keywords = json.loads(article_keywords.content.decode("utf-8"))
         keywords = []
         try:
-            keywords = [keyword['$'] for keyword in article_keywords['abstracts-retrieval-response']['authkeywords']['author-keyword']]
+            article_keywords = requests.get(article_url + "?field=authkeywords", headers=headers)
+            article_keywords = json.loads(article_keywords.content.decode("utf-8"))
+            keywords = [keyword['$'].replace("\\", "|") for keyword in article_keywords['abstracts-retrieval-response']['authkeywords']['author-keyword']]
         except Exception:
             pass
         article['keywords'] = keywords
@@ -85,7 +85,7 @@ def crawling(articles, cur_deep):
 
             # add edges
             try:
-                paper_edges[cur_paper] = [citation['dc:title'] for citation in citations][:max_papers-cur_paper]
+                paper_edges[cur_paper] = [citation['dc:title'].replace("\\", "|") for citation in citations][:max_papers-cur_paper]
                 have_citations = True
             except Exception:
                 pass
@@ -114,15 +114,16 @@ if len(paper_ids) < max_papers and len(response_result['search-results']['link']
 # Write result data
 ids_file = open("./articles_data/ids.txt", 'w')
 for t, id in paper_ids.items():
-   ids_file.write(str(id) + "\t" + t + "\n")
+   ids_file.write(str(id) + "\t" + t.replace("\\", "|") + "\n")
 ids_file.close()
 
 edge_file = open("./articles_data/edges.txt", 'w')
 for id, edges in paper_edges.items():
     edge_file.write(str(id) + "\n\t")
     for edge in edges:
-        edge_idx = paper_ids[edge]
-        edge_file.write(str(edge_idx) + "\t")
+        if edge in paper_ids.keys():
+            edge_idx = paper_ids[edge.replace("\\", "|")]
+            edge_file.write(str(edge_idx) + "\t")
     edge_file.write("\n")
 edge_file.close()
 
@@ -133,11 +134,11 @@ cit_file.close()
 
 auth_file = open("./articles_data/authors.txt", 'w')
 for id, author in paper_authors.items():
-    auth_file.write(str(id) + "\n\t" + str(author) + "\n")
+    auth_file.write(str(id) + "\n\t" + author.replace("\\", "|") + "\n")
 auth_file.close()
 
 key_file = open("./articles_data/keys.txt", 'w')
 for id, keys in paper_keywords.items():
-    key_file.write(str(id) + "\n\t" + str(keys) + "\n")
+    key_file.write(str(id) + "\n\t" + str(keys).replace("\\", "|") + "\n")
 
 pass
