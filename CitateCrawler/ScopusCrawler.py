@@ -15,14 +15,14 @@ headers['Accept'] = 'application/json'
 
 api_resource = "https://api.elsevier.com/content/search/scopus?"
 """ Searching parameters """
-params = 'query=title-abs-key(porn video)&sort=-citedby-count'
+params = 'query=title-abs-key(porn video AND NOT gay)&sort=-citedby-count'
 # Result request' url
 url = api_resource + params
 
 # Maximum amount of papers
-max_papers = 50
+max_papers = 1000
 # Max recursion deep
-max_deep = 1
+max_deep = 3
 # Print article data, during crawling process
 need_print = True
 
