@@ -6,6 +6,8 @@ import pprint
 import random
 import datetime
 import time
+import os
+import os.path
 
 api_key = 'b4ecc27393a3e69e638f5efe599787ab'
 
@@ -31,12 +33,22 @@ need_print = True
 # Dictionaries for data save
 paper_ids = dict()
 paper_edges = dict()
-paper_authors = dict()
-paper_keywords = dict()
-paper_cited_count = dict()
-paper_years = dict()
 
-# File with json for each article
+# Create files
+json_dir = "./articles_json/"
+data_dir = "./articles_data/"
+if not os.path.exists(json_dir):
+    os.makedirs(json_dir)
+if not os.path.exists(data_dir):
+    os.makedirs(data_dir)
+# Create data files
+ids_file = open("./articles_data/ids.txt", 'w')
+edge_file = open("./articles_data/edges.txt", 'w')
+cit_file = open("./articles_data/cit_counts.txt", 'w')
+auth_file = open("./articles_data/authors.txt", 'w')
+key_file = open("./articles_data/keys.txt", 'w')
+date_file = open("./articles_data/years.txt", 'w')
+# Create json file
 dt = time.strftime("%d%b%Y%H%M", time.gmtime())
 article_file = open("./articles_json/" + dt + ".txt", 'w')
 
@@ -105,22 +117,18 @@ def crawling(articles, cur_deep):
 
         # Write article data to dictionaries
         paper_ids[title] = cur_paper
-        paper_authors[cur_paper] = authors
-        paper_cited_count[cur_paper] = cit_count
-        paper_keywords[cur_paper] = keywords
-        paper_edges[cur_paper] = []
-        paper_years[cur_paper] = date
 
-        have_citations = False
         # Get citations
+        citations = []
+        citations_names = []
+        have_citations = False
         if cur_deep < max_deep:
-            citations_response = requests.get(api_resource + 'query=refeid(' + str(article['eid']) + ')', headers=headers)
-            citations_result = json.loads(citations_response.content.decode("utf-8"))
-            citations = citations_result['search-results']['entry']
-
-            # Add edges
             try:
-                paper_edges[cur_paper] = [citation['dc:title'] for citation in citations][:max_papers-cur_paper]
+                citations_response = requests.get(api_resource + 'query=refeid(' + str(article['eid']) + ')', headers=headers)
+                citations_result = json.loads(citations_response.content.decode("utf-8"))
+                citations = citations_result['search-results']['entry']
+                # Add edges
+                citations_names = [citation['dc:title'] for citation in citations][:max_papers-cur_paper]
                 have_citations = True
             except Exception:
                 pass
@@ -133,14 +141,23 @@ def crawling(articles, cur_deep):
             print("    Year = " + date)
             print("    Citations = " + str(cit_count))
             print("    Keywords = " + str(keywords))
-            print("    Edges = " + str(paper_edges[cur_paper]))
+            print("    Edges = " + str(citations_names))
 
         # Add citations into article json
-        article['citations'] = paper_edges[cur_paper]
+        article['citations'] = citations_names
+        paper_edges[cur_paper] = citations_names
 
         # Write current json into file
         json.dump(article, article_file)
         article_file.write("\n")
+
+        # Write other data in files
+        ids_file.write(str(cur_paper) + "\t" + title + "\n")
+        auth_file.write(str(cur_paper) + "\t" + authors + "\n")
+        date_file.write(str(cur_paper) + "\t" + date + "\n")
+        cit_file.write(str(cur_paper) + "\t" + str(cit_count) + "\n")
+        key_file.write(str(cur_paper) + "\t" + str(keywords) + "\n")
+        edge_file.write(str(cur_paper) + "\t" + str(citations_names) + "\n")
 
         # Increase papers' counter
         cur_paper += 1
@@ -165,55 +182,24 @@ if len(paper_ids) < max_papers and len(response_result['search-results']['link']
     articles_list = page_result['search-results']['entry']
     crawling(articles_list, 0)
 
-# Close file with json
+# Close files
 article_file.close()
-
-# Write result data
-#   ids.txt ::
-#       index   title
-ids_file = open("./articles_data/ids.txt", 'w')
-for t, id in paper_ids.items():
-   ids_file.write(str(id) + "\t" + t.replace("\\", "|") + "\n")
 ids_file.close()
+edge_file.close()
+cit_file.close()
+auth_file.close()
+key_file.close()
+date_file.close()
 
-#   edges.txt ::
-#       index
-#       citation_indexes
-edge_file = open("./articles_data/edges.txt", 'w')
-for id, edges in paper_edges.items():
-    edge_file.write(str(id) + "\n\t")
+# Convert edges to indexes
+idx_edges_file = open("./articles_data/idx_edges.txt", 'w')
+for title, idx in paper_ids.items():
+    idx_edges_file.write(str(idx) + "\n\t")
+    edges = paper_edges[idx]
     for edge in edges:
         if edge in paper_ids.keys():
-            edge_idx = paper_ids[edge.replace("\\", "|")]
-            edge_file.write(str(edge_idx) + "\t")
-    edge_file.write("\n")
-edge_file.close()
-
-#   cit_counts.txt ::
-#       index   citations_number
-cit_file = open("./articles_data/cit_counts.txt", 'w')
-for id, cit in paper_cited_count.items():
-    cit_file.write(str(id) + "\t" + str(cit) + "\n")
-cit_file.close()
-
-#   authors.txt ::
-#       index authors
-auth_file = open("./articles_data/authors.txt", 'w')
-for id, author in paper_authors.items():
-    auth_file.write(str(id) + "\n\t" + author.replace("\\", "|") + "\n")
-auth_file.close()
-
-#   keys.txt ::
-#       index
-#           [key]
-key_file = open("./articles_data/keys.txt", 'w')
-for id, keys in paper_keywords.items():
-    key_file.write(str(id) + "\n\t" + str(keys).replace("\\", "|") + "\n")
-key_file.close()
-
-date_file = open("./articles_data/years.txt", 'w')
-for id, dat in paper_years.items():
-    date_file.write(str(id) + "\n\t" + dat.replace("\\", "|") + "\n")
-date_file.close()
+            idx_edges_file.write(str(paper_ids[edge]) + "\t")
+    idx_edges_file.write("\n")
+idx_edges_file.close()
 
 pass
