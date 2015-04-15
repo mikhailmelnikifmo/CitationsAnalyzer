@@ -4,6 +4,8 @@ import requests
 import json
 import pprint
 import random
+import datetime
+import time
 
 api_key = 'b4ecc27393a3e69e638f5efe599787ab'
 
@@ -34,7 +36,8 @@ paper_keywords = dict()
 paper_cited_count = dict()
 
 # File with json for each article
-article_file = open("./articles_json/" + str(random.randint(0, 100000)) + ".txt", 'w')
+dt = time.strftime("%d%b%Y%H%M", time.gmtime())
+article_file = open("./articles_json/" + dt + ".txt", 'w')
 
 # Main response (Search by parameters)
 response = requests.get(url, headers=headers)
