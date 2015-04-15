@@ -24,7 +24,7 @@ params = 'query=title-abs-key(porn video AND NOT gay)&sort=-citedby-count'
 url = api_resource + params
 
 # Maximum amount of papers
-max_papers = 1000
+max_papers = 100
 # Max recursion deep
 max_deep = 3
 # Print article data, during crawling process
@@ -66,6 +66,12 @@ articles_list = page_result['search-results']['entry']
 
 # Start index
 cur_paper = 0
+
+def correct_string(name):
+    shit_cymbols = {"\xe1": "a", '\xe8': 'e'}
+    for cymb in shit_cymbols:
+        name.replace(cymb, shit_cymbols[cymb])
+    return name
 
 def crawling(articles, cur_deep):
     """
@@ -147,17 +153,37 @@ def crawling(articles, cur_deep):
         article['citations'] = citations_names
         paper_edges[cur_paper] = citations_names
 
+        # Write other data in files
+        try:
+            ids_file.write(str(cur_paper) + "\t" + title + "\n")
+            try:
+                auth_file.write(str(cur_paper) + "\t" + correct_string(authors) + "\n")
+            except Exception:
+                auth_file.write(str(cur_paper) + "\t" + "" + "\n")
+            try:
+                date_file.write(str(cur_paper) + "\t" + date + "\n")
+            except Exception:
+                date_file.write(str(cur_paper) + "\t" + "" + "\n")
+            try:
+                cit_file.write(str(cur_paper) + "\t" + str(cit_count) + "\n")
+            except Exception:
+                cit_file.write(str(cur_paper) + "\t" + "" + "\n")
+            try:
+                key_file.write(str(cur_paper) + "\t" + str(keywords) + "\n")
+            except Exception:
+                key_file.write(str(cur_paper) + "\t" + "" + "\n")
+            try:
+                edge_file.write(str(cur_paper) + "\t" + str(citations_names) + "\n")
+            except Exception:
+                edge_file.write(str(cur_paper) + "\t" + "" + "\n")
+        except Exception:
+            print("WRONG TITLE!!!")
+            del(paper_ids[title])
+            continue
+
         # Write current json into file
         json.dump(article, article_file)
         article_file.write("\n")
-
-        # Write other data in files
-        ids_file.write(str(cur_paper) + "\t" + title + "\n")
-        auth_file.write(str(cur_paper) + "\t" + authors + "\n")
-        date_file.write(str(cur_paper) + "\t" + date + "\n")
-        cit_file.write(str(cur_paper) + "\t" + str(cit_count) + "\n")
-        key_file.write(str(cur_paper) + "\t" + str(keywords) + "\n")
-        edge_file.write(str(cur_paper) + "\t" + str(citations_names) + "\n")
 
         # Increase papers' counter
         cur_paper += 1
@@ -173,14 +199,12 @@ def crawling(articles, cur_deep):
 """ Start crawling """
 try:
     crawling(articles_list, 0)
-
     # Continue with next found pages
     if len(paper_ids) < max_papers and len(response_result['search-results']['link'][2]) > 3:
         # Next page content
         page_url = page_result['search-results']['link'][2]['@href'].replace("http", "https").replace(":80", "")
         page_response = requests.get(page_url, headers=headers)
         page_result = json.loads(page_response.content.decode("utf-8"))
-
         articles_list = page_result['search-results']['entry']
         crawling(articles_list, 0)
 except Exception:
