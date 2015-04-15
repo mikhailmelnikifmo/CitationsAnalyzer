@@ -34,6 +34,7 @@ paper_edges = dict()
 paper_authors = dict()
 paper_keywords = dict()
 paper_cited_count = dict()
+paper_years = dict()
 
 # File with json for each article
 dt = time.strftime("%d%b%Y%H%M", time.gmtime())
@@ -73,8 +74,22 @@ def crawling(articles, cur_deep):
         title = article['dc:title']
         if title in paper_ids.keys():
             continue
-        cit_count = article['citedby-count']
-        authors = article['dc:creator']
+        cit_count = 0
+        try:
+            cit_count = article['citedby-count']
+        except Exception:
+            pass
+        authors = ""
+        try:
+            authors = article['dc:creator']
+        except Exception:
+            pass
+        date = ""
+        try:
+            date = article['prism:coverDisplayDate']
+        except Exception:
+            pass
+
         article_url = article['prism:url'].replace("http", "https").replace(":80", "")
 
         # Find keywords of this article
@@ -94,6 +109,7 @@ def crawling(articles, cur_deep):
         paper_cited_count[cur_paper] = cit_count
         paper_keywords[cur_paper] = keywords
         paper_edges[cur_paper] = []
+        paper_years[cur_paper] = date
 
         have_citations = False
         # Get citations
@@ -114,6 +130,7 @@ def crawling(articles, cur_deep):
             print("Art index = " + str(cur_paper))
             print("    Title = " + title)
             print("    Authors = " + authors)
+            print("    Year = " + date)
             print("    Citations = " + str(cit_count))
             print("    Keywords = " + str(keywords))
             print("    Edges = " + str(paper_edges[cur_paper]))
@@ -192,5 +209,11 @@ auth_file.close()
 key_file = open("./articles_data/keys.txt", 'w')
 for id, keys in paper_keywords.items():
     key_file.write(str(id) + "\n\t" + str(keys).replace("\\", "|") + "\n")
+key_file.close()
+
+date_file = open("./articles_data/years.txt", 'w')
+for id, dat in paper_years.items():
+    date_file.write(str(id) + "\n\t" + dat.replace("\\", "|") + "\n")
+date_file.close()
 
 pass
