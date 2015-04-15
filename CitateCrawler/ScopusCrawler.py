@@ -169,18 +169,22 @@ def crawling(articles, cur_deep):
         pass
     pass
 
+
 """ Start crawling """
-crawling(articles_list, 0)
-
-# Continue with next found pages
-if len(paper_ids) < max_papers and len(response_result['search-results']['link'][2]) > 3:
-    # Next page content
-    page_url = page_result['search-results']['link'][2]['@href'].replace("http", "https").replace(":80", "")
-    page_response = requests.get(page_url, headers=headers)
-    page_result = json.loads(page_response.content.decode("utf-8"))
-
-    articles_list = page_result['search-results']['entry']
+try:
     crawling(articles_list, 0)
+
+    # Continue with next found pages
+    if len(paper_ids) < max_papers and len(response_result['search-results']['link'][2]) > 3:
+        # Next page content
+        page_url = page_result['search-results']['link'][2]['@href'].replace("http", "https").replace(":80", "")
+        page_response = requests.get(page_url, headers=headers)
+        page_result = json.loads(page_response.content.decode("utf-8"))
+
+        articles_list = page_result['search-results']['entry']
+        crawling(articles_list, 0)
+except Exception:
+    pass
 
 # Close files
 article_file.close()
