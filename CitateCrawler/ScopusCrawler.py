@@ -8,6 +8,9 @@ import datetime
 import time
 import os
 import os.path
+import time
+
+start = time.clock()
 
 api_key = 'b4ecc27393a3e69e638f5efe599787ab'
 
@@ -19,16 +22,33 @@ headers['Accept'] = 'application/json'
 
 api_resource = "https://api.elsevier.com/content/search/scopus?"
 """ Searching parameters """
-params = 'query=title-abs-key(porn video AND NOT gay)&sort=-citedby-count'
+# params = 'query=title-abs-key(porn video AND NOT gay)&sort=-citedby-count'
+params = 'query=title-abs-key((anal sex) AND NOT gay)'
+
+fields = '&field=link ref=self,link ref=scopus,link ref=scopus-citedby,' \
+         'prism:url,dc:identifier,eid,dc:title,prism:aggregationType,' \
+         'citedby-count,prism:publicationName,prism:isbn,prism:issn,' \
+         'prism:volume,prism:issueIdentifier,prism:pageRange,prism:coverDate,prism:coverDisplayDate,' \
+         'prism:doi,pubmed-id,orcid,dc:creator,' \
+         'affilname,affiliation-city,affiliation-country,afid,affiliation-url,name-variant,' \
+         'dc:description,authkeywords,intid,article-number'
+fields = '&field=link ref=self,link ref=scopus,link ref=scopus-citedby,' \
+         'prism:url,dc:identifier,eid,dc:title,prism:aggregationType,' \
+         'citedby-count,prism:publicationName,prism:isbn,prism:issn,' \
+         'prism:volume,prism:issueIdentifier,prism:pageRange,prism:coverDate,prism:coverDisplayDate,' \
+         'prism:doi,pubmed-id,orcid,dc:creator,' \
+         'affilname,affiliation-city,affiliation-country,afid,affiliation-url,name-variant,' \
+         'dc:description,authkeywords,intid,article-number'
+# fields = ''
 # Result request' url
 url = api_resource + params
 
 # Maximum amount of papers
-max_papers = 100
+max_papers = 20
 # Max recursion deep
-max_deep = 3
+max_deep = 2
 # Print article data, during crawling process
-need_print = True
+need_print = False
 
 # Dictionaries for data save
 paper_ids = dict()
@@ -52,12 +72,21 @@ date_file = open("./articles_data/years.txt", 'w')
 dt = time.strftime("%d%b%Y%H%M", time.gmtime())
 article_file = open("./articles_json/" + dt + ".txt", 'w')
 
+print("Preprocessing time = " + str(time.clock() - start))
+
 # Main response (Search by parameters)
+print("First search started")
+start = time.clock()
 response = requests.get(url, headers=headers)
+print("First search request: " + str(time.clock() - start))
+
 response_result = json.loads(response.content.decode("utf-8"))
 
 # Page content (Articles on the first page)
-page_url = response_result['search-results']['link'][0]['@href'].replace("http", "https").replace(":80", "")
+print("Page content started")
+start = time.clock()
+page_url = response_result['search-results']['link'][0]['@href'].replace("http", "https").replace(":80", "") + "&view=STANDARD" +fields
+print("Page_articles request: " + str(time.clock() - start))
 page_response = requests.get(page_url, headers=headers)
 page_result = json.loads(page_response.content.decode("utf-8"))
 
@@ -112,12 +141,17 @@ def crawling(articles, cur_deep):
 
         # Find keywords of this article
         keywords = []
-        try:
-            article_keywords = requests.get(article_url + "?field=authkeywords", headers=headers)
-            article_keywords = json.loads(article_keywords.content.decode("utf-8"))
-            keywords = [keyword['$'] for keyword in article_keywords['abstracts-retrieval-response']['authkeywords']['author-keyword']]
-        except Exception:
-            pass
+        # try:
+        #     print("Keywords started")
+        #     start = time.clock()
+        #     article_keywords = requests.get(article_url + "?field=authkeywords", headers=headers)
+        #
+        #     article_keywords = json.loads(article_keywords.content.decode("utf-8"))
+        #     keywords = [keyword['$'] for keyword in article_keywords['abstracts-retrieval-response']['authkeywords']['author-keyword']]
+        #     print("Keywords request: " + str(time.clock() - start))
+        # except Exception:
+        #     print("Keywords request FAIL: " + str(time.clock() - start))
+        #     pass
         # Add keywords into article json
         article['keywords'] = keywords
 
@@ -130,7 +164,10 @@ def crawling(articles, cur_deep):
         have_citations = False
         if cur_deep < max_deep:
             try:
+                print("Citations search started")
+                start = time.clock()
                 citations_response = requests.get(api_resource + 'query=refeid(' + str(article['eid']) + ')', headers=headers)
+                print("Citations request: " + str(time.clock() - start))
                 citations_result = json.loads(citations_response.content.decode("utf-8"))
                 citations = citations_result['search-results']['entry']
                 # Add edges
