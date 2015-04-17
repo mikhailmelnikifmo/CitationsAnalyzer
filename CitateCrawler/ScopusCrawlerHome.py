@@ -38,20 +38,20 @@ def crawling(articles, cur_deep):
             date = article['prism:coverDisplayDate']
         except Exception:
             print("WRONG ARTICLE!!!")
-            del(paper_ids[title])
+            # del(paper_ids[title])
             continue
 
         article_url = article['prism:url'].replace("http", "https").replace(":80", "")
 
         # Find keywords of this article
         try:
-            print("Keywords started")
+            # print("Keywords started")
             start = time.clock()
             article_keywords = requests.get(article_url + "?field=authkeywords", headers=headers)
 
             article_keywords = json.loads(article_keywords.content.decode("utf-8"))
             keywords = [keyword['$'] for keyword in article_keywords['abstracts-retrieval-response']['authkeywords']['author-keyword']]
-            print("Keywords request: " + str(time.clock() - start))
+            # print("Keywords request: " + str(time.clock() - start))
         except Exception:
             print("Keywords request FAIL: " + str(time.clock() - start))
             continue
@@ -76,10 +76,10 @@ def crawling(articles, cur_deep):
         have_citations = False
         if cur_deep < max_deep:
             try:
-                print("Citations search started")
+                # print("Citations search started")
                 start = time.clock()
                 citations_response = requests.get(api_resource + 'query=refeid(' + str(article['eid']) + ')', headers=headers)
-                print("Citations request: " + str(time.clock() - start))
+                # print("Citations request: " + str(time.clock() - start))
                 citations_result = json.loads(citations_response.content.decode("utf-8"))
                 citations = citations_result['search-results']['entry']
                 # Add edges
@@ -155,14 +155,14 @@ headers['Accept'] = 'application/json'
 
 api_resource = "https://api.elsevier.com/content/search/scopus?"
 """ Searching parameters """
-search_params = ['query=title-abs-key(CLAVIRE)', 'query=title-abs-key(porno)', 'query=title-abs-key(small women)']
+search_params = ['query=title-abs-key(workflow scheduling)', 'query=title-abs-key(grid computing)', 'query=title-abs-key(harmonic search)']
 
 # Maximum amount of papers
-max_papers = 100
+max_papers = 30000
 # Max recursion deep
-max_deep = 0
+max_deep = 4
 # Print article data, during crawling process
-need_print = True
+need_print = False
 
 # Dictionaries for data save
 paper_ids = dict()
@@ -190,8 +190,8 @@ dt = time.strftime("%d%b%Y%H%M", time.gmtime())
 article_file = open("./articles_json/" + dt + ".txt", 'w')
 
 # Start index
-cur_paper = 0
-key_index = 0
+cur_paper = 2194
+key_index = 8286
 
 print("Preprocessing time = " + str(time.clock() - start))
 
@@ -202,30 +202,34 @@ for search_query in search_params:
     if cur_paper >= max_papers:
         break
     # Result request' url
-    url = api_resource + search_query
+    url = api_resource + search_query + "&sort=citedby-count"
 
     # Main response (Search by parameters)
-    print("First search started")
-    start = time.clock()
-    response = requests.get(url, headers=headers)
-    print("First search request: " + str(time.clock() - start))
+    try:
+        print("First search started")
+        start = time.clock()
+        response = requests.get(url, headers=headers)
+        print("First search request: " + str(time.clock() - start))
 
-    response_result = json.loads(response.content.decode("utf-8"))
+        response_result = json.loads(response.content.decode("utf-8"))
 
-    # Page content (Articles on the first page)
-    print("Page content started")
-    start = time.clock()
-    page_url = response_result['search-results']['link'][0]['@href'].replace("http", "https").replace(":80", "")
-    print("Page_articles request: " + str(time.clock() - start))
-    page_response = requests.get(page_url, headers=headers)
-    page_result = json.loads(page_response.content.decode("utf-8"))
+        # Page content (Articles on the first page)
+        print("Page content started")
+        start = time.clock()
+        page_url = response_result['search-results']['link'][0]['@href'].replace("http", "https").replace(":80", "")
+        print("Page_articles request: " + str(time.clock() - start))
+        page_response = requests.get(page_url, headers=headers)
+        page_result = json.loads(page_response.content.decode("utf-8"))
 
-    # First list
-    articles_list = page_result['search-results']['entry']
+        # First list
+        articles_list = page_result['search-results']['entry']
+    except Exception:
+        continue
 
     """ Start crawling """
     try:
         crawling(articles_list, 0)
+        print("PAGE FINISH")
         # Continue with next found pages
         if len(paper_ids) < max_papers and len(response_result['search-results']['link'][2]) > 3:
             # Next page content
@@ -234,6 +238,7 @@ for search_query in search_params:
             page_result = json.loads(page_response.content.decode("utf-8"))
             articles_list = page_result['search-results']['entry']
             crawling(articles_list, 0)
+            print("PAGE FINISH")
     except Exception:
         pass
 
