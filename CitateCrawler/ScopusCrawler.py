@@ -126,14 +126,12 @@ if __name__ == "__main__":
     api_resource = "https://api.elsevier.com/content/search/scopus?"
     # api_resource = "http://api.elsevier.com/content/search/index:SCOPUS?"
     """ Searching parameters """
-    search_params = ['query=title-abs-key(harmonic search)', 'query=title-abs-key(machine learning)',
-                     'query=title-abs-key(gravitation search algorithm)', 'query=title-abs-key(hyper-heuristics)',
-                     'query=title-abs-key(mapreduce)']
+    search_params = ['query=title-abs-key(artificial intelligence)', 'query=title-abs-key(mapreduce)', 'query=title-abs-key(apache spark)']
 
     # Maximum amount of papers
     max_papers = 20000
     # Max recursion deep
-    max_deep = 4
+    max_deep = 0
     # Print article data, during crawling process
     need_print = False
 
@@ -187,17 +185,30 @@ if __name__ == "__main__":
             crawling(articles_list, 0)
             print("PAGE FINISH")
             # Continue with next found pages
-            if len(paper_ids) < max_papers and len(response_result['search-results']['link'][2]) > 3:
+        except Exception:
+            print("!!! global crawling exception !!!")
+            pass
+        try:
+            while len(paper_ids) < max_papers:
                 # Next page content
                 print("Start crawling NEXT page")
-                page_url = page_result['search-results']['link'][2]['@href'].replace("http", "https").replace(":80", "")
+                links = page_result['search-results']['link']
+                next_page = None
+                for link in links:
+                    if link['@ref'] == 'next':
+                        next_page = link
+                        break
+                if next_page is None:
+                    break
+                print("page found")
+                page_url = next_page['@href'].replace("http", "https").replace(":80", "")
                 page_response = requests.get(page_url, headers=headers)
                 page_result = json.loads(page_response.content.decode("utf-8"))
                 articles_list = page_result['search-results']['entry']
                 crawling(articles_list, 0)
                 print("PAGE FINISH")
         except Exception:
-            print("!!! global crawling exception !!!")
+            print("next page error")
             pass
 
     # Close files
