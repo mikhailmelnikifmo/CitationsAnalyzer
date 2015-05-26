@@ -8,8 +8,11 @@ import threading
 
 # topic = 'comp_science'
 # topic = 'high performance computing'
+
+""" choose your topic and year """
 topic = 'visualization'
 year = '2013'
+
 api_resource = "https://api.elsevier.com/content/search/scopus?"
 add_params = "DOCTYPE(ar)"
 search_param = 'query=title-abs-key(' + topic + ')' + add_params
