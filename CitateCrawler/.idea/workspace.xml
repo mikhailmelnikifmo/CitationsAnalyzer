@@ -1,11 +1,470 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="426ef3e8-c310-497a-9747-f31ce733469e" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Projects\CitationsAnalyzer\CitateCrawler\ScopusCrawlerHome.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/CitateCrawler.iml" afterPath="$PROJECT_DIR$/.idea/CitateCrawler.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ScopusCrawler.py" afterPath="$PROJECT_DIR$/ScopusCrawler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="426ef3e8-c310-497a-9747-f31ce733469e" name="Default" comment="release">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2013/articles4000 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles0 - 250" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles0 - 250" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles0 - 250" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2000/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2001/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2002/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2003/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2004/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2005/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2006/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2007/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2008/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2009/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2010/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2011/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2012/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2013/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2014/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2015/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/citation network/2000-2016/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2000/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2001/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2003/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2004/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2004_rename/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2005/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2006/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2007/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2008/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2009/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2011/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2012/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2013/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2014/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2015/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2000/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2001/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2002/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2003/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2004/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2005/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2006/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2007/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2008/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2009/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2010/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2011/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2015/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/porn AND NOT gay/2000-2016/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2000/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2001/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2002/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2003/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2004/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2005/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2006/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2007/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2008/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2010/articles0 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles1000 - 1250" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles1000 - 1250" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles1000 - 1250" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2004/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2005/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2006/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2007/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2008/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2009/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2010/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2011/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2012/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2013/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2014/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2015/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/citation network/2000-2016/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2000/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2001/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2003/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2004/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2004_rename/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2005/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2006/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2007/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2008/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2009/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2011/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2012/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2013/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2014/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2015/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2004/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2005/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2006/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2007/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2008/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2009/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2010/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2011/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2000/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2001/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2002/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2003/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2004/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2005/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2006/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2007/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2008/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2010/articles1000 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles1250 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles1250 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles1250 - 1500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles1500 - 1750" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles1500 - 1750" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles1500 - 1750" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2005/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2006/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2007/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2008/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2009/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2010/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2011/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2012/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2013/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2014/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2015/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/citation network/2000-2016/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2000/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2001/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2003/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2004/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2004_rename/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2005/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2006/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2007/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2008/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2009/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2011/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2012/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2013/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2014/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2005/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2006/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2007/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2008/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2009/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2010/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2011/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2000/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2001/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2002/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2003/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2004/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2005/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2006/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2007/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2008/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2010/articles1500 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles1750 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles1750 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles1750 - 2000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles2000 - 2250" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles2000 - 2250" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles2000 - 2250" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2008/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2009/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2010/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2011/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2012/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2013/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2014/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2015/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/citation network/2000-2016/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2001/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2003/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2005/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2006/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2007/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2008/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2009/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2011/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2012/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2013/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2014/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2007/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2008/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2009/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2010/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2011/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2000/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2001/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2002/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2003/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2004/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2005/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2006/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2007/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2008/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2010/articles2000 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles2250 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles2250 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles2250 - 2500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles250 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles250 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles250 - 500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles2500 - 2750" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles2500 - 2750" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles2500 - 2750" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2010/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2011/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2012/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2013/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2014/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2001/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2003/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2005/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2006/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2007/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2008/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2009/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2011/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2012/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2013/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2014/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2008/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2009/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2010/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2011/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2000/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2001/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2002/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2003/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2004/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2005/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2006/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2007/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2008/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2010/articles2500 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles2750 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles2750 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles2750 - 3000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles3000 - 3250" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles3000 - 3250" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles3000 - 3250" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2012/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2013/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2014/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2001/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2003/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2006/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2007/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2008/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2009/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2011/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2012/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2013/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2014/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2010/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2011/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2000/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2001/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2002/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2003/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2004/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2005/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2006/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2007/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2008/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2010/articles3000 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles3250 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles3250 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles3250 - 3500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles3500 - 3750" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles3500 - 3750" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles3500 - 3750" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2012/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2013/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2014/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2008/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2009/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2011/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2012/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2013/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2014/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2004/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2005/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2006/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2007/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2008/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2010/articles3500 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles3750 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles3750 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles3750 - 4000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles4000 - 4250" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles4000 - 4250" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles4000 - 4250" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2014/articles4000 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2009/articles4000 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2011/articles4000 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2012/articles4000 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2013/articles4000 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2014/articles4000 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2006/articles4000 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2007/articles4000 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2008/articles4000 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009/articles4000 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles4000 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2010/articles4000 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles4250 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles4250 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles4250 - 4500" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles4500 - 4750" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles4500 - 4750" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles4500 - 4750" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2013/articles4500 - 5000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2014/articles4500 - 5000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2012/articles4500 - 5000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2013/articles4500 - 5000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2014/articles4500 - 5000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2006/articles4500 - 5000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2007/articles4500 - 5000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2008/articles4500 - 5000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009/articles4500 - 5000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles4500 - 5000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2010/articles4500 - 5000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles4750 - 5000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles4750 - 5000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles4750 - 5000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2000/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2001/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2002/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2003/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2004/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2005/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2006/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2007/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2008/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2009/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2010/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2011/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2012/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2013/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2014/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/big data/2015/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/citation network/2000-2016/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2000/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2001/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2003/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2004/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2004_rename/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2005/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2006/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2007/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2008/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2009/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2011/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2012/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2013/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2014/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/comp_science/2015/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2001/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2002/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2003/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2004/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2005/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2006/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2007/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2008/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2009/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2010/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2011/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/high performance computing/2015/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2000/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2001/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2002/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2003/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2004/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2005/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2006/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2007/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2008/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2010/articles500 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles500 - 750" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles500 - 750" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles500 - 750" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2011/articles750 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2012/articles750 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/articles_json/visualization/2013/articles750 - 1000" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CitateCrawler.iws" />
@@ -37,8 +496,8 @@
       <file leaf-file-name="ScopusCrawler.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ScopusCrawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47358122" vertical-offset="396" max-vertical-offset="4246">
-              <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.32247558" vertical-offset="330" max-vertical-offset="4246">
+              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
               <folding>
                 <element signature="e#25#34#0" expanded="true" />
               </folding>
@@ -71,7 +530,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1874" />
-    <option name="height" value="1096" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -451,34 +910,40 @@
       <option name="project" value="LOCAL" />
       <updated>1430293681485</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="release">
+      <created>1432572368000</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1432572368000</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1874" height="1092" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13562971" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13562971" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46908316" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43912593" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35275754" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43912593" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35275754" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -498,7 +963,9 @@
     </option>
     <MESSAGE value="refactor" />
     <MESSAGE value="scopus crawling" />
-    <option name="LAST_COMMIT_MESSAGE" value="scopus crawling" />
+    <MESSAGE value="release" />
+    <MESSAGE value="json" />
+    <option name="LAST_COMMIT_MESSAGE" value="json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -519,6 +986,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ScopusCrawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4246">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScopusCrawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4246">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/articles_json/comp_science/2001/articles2000 - 2500">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8565217" vertical-offset="5680" max-vertical-offset="6600">
@@ -852,14 +1339,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5100403" vertical-offset="3242" max-vertical-offset="3740">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ScopusCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47358122" vertical-offset="396" max-vertical-offset="4246">
-          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.32247558" vertical-offset="330" max-vertical-offset="4246">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
           <folding>
             <element signature="e#25#34#0" expanded="true" />
           </folding>
