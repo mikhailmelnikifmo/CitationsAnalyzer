@@ -1,6 +1,9 @@
 package com.citation
 
 import java.lang.Double.isNaN
+import java.util
+import scala.collection.mutable
+import scala.collection.mutable.HashMap
 import scala.util.parsing.json._
 import org.apache.hadoop.conf.Configuration
 import org.apache.hadoop.fs.{FileSystem, Path}
@@ -8,6 +11,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.SparkContext._
 import org.apache.spark.rdd.RDD
 import org.apache.spark.util.StatCounter
+import com.citation.Article
 
 object CitationsDataProcessing extends Serializable {
   def main(args: Array[String]): Unit = {
@@ -16,27 +20,47 @@ object CitationsDataProcessing extends Serializable {
     println("privet")
     val directory = "/home/vagrant/citations/"
 
-//    println(directory)
-//    val jsons = sc.textFile("hdfs://" + directory + "articles_json/comp_science/2011/articles0 - 500").flatMap(_.split("\n")).
-//                        map(x => JSON.parseFull(x))
-//    jsons.take(10).foreach(println)
-//    println("articles")
-//    try {
-//      val articles = jsons.map(x => x.get("dc:title"))
-//    val sizes = jsons.map(x => x.size)
-//    println("sizes")
-//    sizes.take(10).foreach(println)
-//      articles.take(10).foreach(println)
-//    } catch {
-//      case e:Exception => println("opa")
-//    }
-//    jsons.saveAsTextFile("hdfs://" + directory + "json_out4/")
-//    jsons.coalesce(1, true).saveAsTextFile("hdfs://" + directory + "json_out5/")
+    println(directory)
+    val jsons = sc.textFile("hdfs://" + directory + "articles_json/*/*").flatMap(_.split("\n")).
+                        map(x => JSON.parseFull(x))
+    val keywords_rdd_temp = jsons.map(x => x.get.asInstanceOf[Map[String, Any]].get("keywords").get.asInstanceOf[List[String]]).
+      flatMap(y => y)
+    println("keywords rdd TEMP = ")
+    keywords_rdd_temp.take(10).foreach(println)
+    println()
 
-      println("Titles:")
-      val titles_file = sc.textFile("hdfs://" + directory + "artData/titles.txt").flatMap(_.split("\n"))
-      val titles = titles_file.map(x => (x.split("\t")(0), x.split("\t")(1)))
-      titles.take(20).foreach(println)
+//    val keywords_rdd = jsons.map(x => x.get.
+//      asInstanceOf[Map[String, Any]].
+//      get("keywords").
+//      asInstanceOf[String]).
+//      distinct().
+//      zipWithIndex()
+//    val titles_rdd = jsons.map(x => x.get.asInstanceOf[Map[String, Any]].get("keywords").get.asInstanceOf[String].toLowerCase).
+//      distinct().zipWithIndex()
+//
+//    println("keywords rdd = ")
+//    keywords_rdd.take(10).foreach(println)
+//    println()
+//
+//    println("titles rdd = ")
+//    titles_rdd.take(10).foreach(println)
+//    println()
+
+//    val articles = new mutable.HashMap[String, Article]
+//    for (x <- jsons) {
+//      val title = x.get.asInstanceOf[Map[String,Any]].get("dc:title").asInstanceOf[String]
+//
+//      if (!articles.contains(title.get.toString())) {
+//        val keywords = x.get.asInstanceOf[Map[String,Any]].get("keywords").get.toString().split(", ").map(x => x.replace("\"", "").toLowerCase())
+//        val citations = x.get.asInstanceOf[Map[String,Any]].get("citations")
+//        val data = x.get.asInstanceOf[Map[String,Any]].get("coverDate")
+//        val cit_count = x.get.asInstanceOf[Map[String,Any]].get("citedby-count").get.toString().toInt
+//        val author = x.get.asInstanceOf[Map[String,Any]].get("dc:creator")
+//        val affilation = x.get.asInstanceOf[Map[String,Any]].get("affilation")
+//        val affil_name = affilation.get.asInstanceOf[Map[String, Any]].get("affilname")
+//        articles.put(title.get.toString(), new Article())
+//      }
+//    }
   }
 
   def writeToHdfs(sparkConf:SparkConf, filePath: String, text: String): Unit = {
