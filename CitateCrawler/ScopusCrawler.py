@@ -11,7 +11,7 @@ import threading
 
 """ choose your topic and year """
 topic = 'visualization'
-year = '2013'
+year = '2014'
 
 api_resource = "https://api.elsevier.com/content/search/scopus?"
 add_params = "DOCTYPE(ar)"
@@ -62,7 +62,6 @@ def articles_mining(page, file, headers):
             continue
 
         article_url = article['prism:url'].replace("http", "https").replace(":80", "")
-
         # Find keywords of this article
         try:
             # print("Keywords started")
