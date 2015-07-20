@@ -10,11 +10,11 @@ import threading
 # topic = 'high performance computing'
 
 """ choose your topic and year """
-topic = 'visualization'
-year = '2014'
+topic = 'harmony search'
+year = '2000-2014'
 
 api_resource = "https://api.elsevier.com/content/search/scopus?"
-add_params = "DOCTYPE(ar)"
+add_params = "&sort=citedby-count"
 search_param = 'query=title-abs-key(' + topic + ')' + add_params
 json_dir = "./articles_json/" + topic + "/" + year + "/"
 
@@ -65,7 +65,8 @@ def articles_mining(page, file, headers):
         # Find keywords of this article
         try:
             # print("Keywords started")
-            article_keywords = requests.get(article_url + "?field=authkeywords", headers=headers)
+            # article_keywords = requests.get(article_url + "?field=authkeywords", headers=headers)
+            article_keywords = requests.get(article_url + "?field=dc:description", headers=headers)
             article_keywords = json.loads(article_keywords.content.decode("utf-8"))
             keywords = [keyword['$'] for keyword in article_keywords['abstracts-retrieval-response']['authkeywords']['author-keyword']]
         except Exception:
