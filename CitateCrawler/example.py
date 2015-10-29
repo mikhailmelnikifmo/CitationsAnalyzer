@@ -1,6 +1,11 @@
 import json
 import requests
 
+"""
+This example created to understand how data crawled by using scopus api.
+This is not working script! You should choose your topic and year in ScopusCrawler.py and run it.
+"""
+
 api_resource = "https://api.elsevier.com/content/search/scopus?"
 search_param = 'query=title-abs-key(big data)'  # for example
 
