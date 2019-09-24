@@ -10,12 +10,16 @@ import threading
 # topic = 'high performance computing'
 
 """ choose your topic and year """
-topic = 'harmony search'
-year = '2000-2014'
+topic = 'medicine'
+year = '2014-2018'
 
 api_resource = "https://api.elsevier.com/content/search/scopus?"
-add_params = "&sort=citedby-count"
-search_param = 'query=title-abs-key(' + topic + ')' + add_params
+# add_params = "&sort=citedby-count"
+add_params = "&subj=MEDI"
+# search_param = 'query=title-abs-key(' + topic + ')' + add_params
+# search_param = "query=DOCTYPE(ab) AND PUBYEAR > 2014" + add_params #title-abs-key(' + topic + ')' + " AND
+# search_param = "query=title(\'workflow scheduling\') AND AUTHLASTNAME(zvartau AND semakova)" #title-abs-key(' + topic + ')' + " AND
+search_param = "query=DOI(10.1097/01.hjh.0000467353.66660.d4)" #title-abs-key(' + topic + ')' + " AND
 json_dir = "./articles_json/" + topic + "/" + year + "/"
 
 api_keys = ['3d9af39cf3b78b446bbe67f0ae9211e1',
@@ -41,82 +45,86 @@ api_keys2 = ['9e51e3083f4405b0e8f428214d609274',
             '351b595cc4dbcb05a8f4ff0cac383dba']
 
 
-need_print = False
+need_print = True
 
 def articles_mining(page, file, headers):
-    articles = page['search-results']['entry']
-    start_time = time.clock()
-    for article in articles:
-        finish_time = time.clock()
-        #print("Article time = " + str(finish_time - start_time))
-        start_time = finish_time
+    try:
+        articles = page['search-results']['entry']
 
-        # Article data
-        title = article['dc:title']
-        try:
-            cit_count = article['citedby-count']
-            authors = article['dc:creator']
-            date = article['prism:coverDate']
-        except Exception:
-            # print("WRONG ARTICLE!!!")
-            continue
+        start_time = time.clock()
+        for article in articles:
+            finish_time = time.clock()
+            #print("Article time = " + str(finish_time - start_time))
+            start_time = finish_time
 
-        article_url = article['prism:url'].replace("http", "https").replace(":80", "")
-        # Find keywords of this article
-        try:
-            # print("Keywords started")
-            # article_keywords = requests.get(article_url + "?field=authkeywords", headers=headers)
-            article_keywords = requests.get(article_url + "?field=dc:description", headers=headers)
-            article_keywords = json.loads(article_keywords.content.decode("utf-8"))
-            keywords = [keyword['$'] for keyword in article_keywords['abstracts-retrieval-response']['authkeywords']['author-keyword']]
-        except Exception:
-            # print("Key words error")
+            # Article data
+            title = article['dc:title']
             try:
-                if article_keywords['service-error']['status']['statusCode'] == 'QUOTA_EXCEEDED':
-                    print("QUOTA EXCEEDED!!!")
-                    break
+                cit_count = article['citedby-count']
+                authors = article['dc:creator']
+                date = article['prism:coverDate']
             except Exception:
-                pass
-            continue
-
-        # Add keywords data
-        article['keywords'] = keywords
-
-        # Get citations
-        citations_names = []
-        if int(cit_count) > 0:
-            try:
-                citations_response = requests.get(api_resource + 'query=refeid(' + str(article['eid']) + ')', headers=headers)
-                citations_result = json.loads(citations_response.content.decode("utf-8"))
-                citations = citations_result['search-results']['entry']
-                citations_names.extend([citation['dc:title'] for citation in citations])
-                next_cit_page = next_page(citations_result)
-                while next_cit_page is not None:
-                    citations = citations_result['search-results']['entry']
-                    citations_names.extend([citation['dc:title'] for citation in citations])
-                    next_cit_page = next_page(next_cit_page)
-            except Exception:
-                # print("citations error")
+                # print("WRONG ARTICLE!!!")
                 continue
 
-        # Print current article data, if need
-        if need_print:
-            print("    Title = " + title)
-            print("    Authors = " + authors)
-            print("    Year = " + date)
-            print("    Citations = " + str(cit_count))
-            print("    Keywords = " + str(keywords))
-            print("    Edges = " + str(citations_names))
+            article_url = article['prism:url'].replace("http", "https").replace(":80", "")
+            # Find keywords of this article
+            try:
+                # print("Keywords started")
+                # article_keywords = requests.get(article_url + "?field=authkeywords", headers=headers)
+                article_keywords = requests.get(article_url + "?field=dc:description", headers=headers)
+                article_keywords = json.loads(article_keywords.content.decode("utf-8"))
+                keywords = [keyword['$'] for keyword in article_keywords['abstracts-retrieval-response']['authkeywords']['author-keyword']]
+            except Exception:
+                # print("Key words error")
+                try:
+                    if article_keywords['service-error']['status']['statusCode'] == 'QUOTA_EXCEEDED':
+                        print("QUOTA EXCEEDED!!!")
+                        break
+                except Exception:
+                    pass
+                continue
 
-        # Add citations into article json
-        article['citations'] = citations_names
+            # Add keywords data
+            article['keywords'] = keywords
 
-        # Write current json into file
-        json.dump(article, file)
-        file.write("\n")
-        # print("article has been written")
+            # Get citations
+            citations_names = []
+            if int(cit_count) > 0:
+                try:
+                    citations_response = requests.get(api_resource + 'query=refeid(' + str(article['eid']) + ')', headers=headers)
+                    citations_result = json.loads(citations_response.content.decode("utf-8"))
+                    citations = citations_result['search-results']['entry']
+                    citations_names.extend([citation['dc:title'] for citation in citations])
+                    next_cit_page = next_page(citations_result)
+                    while next_cit_page is not None:
+                        citations = citations_result['search-results']['entry']
+                        citations_names.extend([citation['dc:title'] for citation in citations])
+                        next_cit_page = next_page(next_cit_page)
+                except Exception:
+                    # print("citations error")
+                    continue
+
+            # Print current article data, if need
+            if need_print:
+                print("    Title = " + title)
+                print("    Authors = " + authors)
+                print("    Year = " + date)
+                print("    Citations = " + str(cit_count))
+                print("    Keywords = " + str(keywords))
+                print("    Edges = " + str(citations_names))
+
+            # Add citations into article json
+            article['citations'] = citations_names
+
+            # Write current json into file
+            json.dump(article, file)
+            file.write("\n")
+            # print("article has been written")
+            pass
         pass
-    pass
+    except Exception:
+        print("no entry")
 
 def next_page(page):
     links = page['search-results']['link']

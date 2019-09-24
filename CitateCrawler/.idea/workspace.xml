@@ -1,48 +1,432 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34cf9e91-4758-4f9d-8ee8-85851ebaf820" name="Default" comment="" />
+    <list default="true" id="34cf9e91-4758-4f9d-8ee8-85851ebaf820" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/CitateCrawler.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CitateCrawler.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScopusCrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScopusCrawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/citation network/2000-2016/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/citation network/2000-2016/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/citation network/2000-2016/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/citation network/2000-2016/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/citation network/2000-2016/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2000/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2000/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2000/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2000/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2001/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2001/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2001/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2001/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2001/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2001/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2001/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_first/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2002_second/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2003/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2003/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2003/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2003/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2003/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2003/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2003/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2004/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2004/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2004/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2004/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2004_rename/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2004_rename/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2004_rename/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2004_rename/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2005/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2005/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2005/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2005/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2005/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2005/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2006/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2006/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2006/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2006/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2006/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2006/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2006/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2007/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2007/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2007/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2007/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2007/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2007/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2007/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2008/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2008/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2008/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2008/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2008/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2008/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2008/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2008/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2009/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2009/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2009/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2009/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2009/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2009/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2009/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2009/articles4000 - 4500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2009/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2010_first/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2011/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2011/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2011/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2011/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2011/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2011/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2011/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2011/articles4000 - 4500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2011/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2012/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2012/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2012/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2012/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2012/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2012/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2012/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2012/articles4000 - 4500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2012/articles4500 - 5000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2012/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2013/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2013/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2013/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2013/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2013/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2013/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2013/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2013/articles4000 - 4500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2013/articles4500 - 5000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2013/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2014/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2014/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2014/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2014/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2014/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2014/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2014/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2014/articles4000 - 4500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2014/articles4500 - 5000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2014/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2015/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2015/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/comp_science/2015/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2000/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2001/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2001/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2002/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2002/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2003/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2003/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2004/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2004/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2004/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2005/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2005/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2005/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2005/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2006/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2006/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2006/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2006/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2007/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2007/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2007/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2007/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2007/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2008/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2008/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2008/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2008/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2008/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2008/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2009/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2009/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2009/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2009/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2009/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2009/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2010/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2010/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2010/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2010/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2010/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2010/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2010/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2011/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2011/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2011/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2011/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2011/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2011/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2011/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2012/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2013/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2014/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2015/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/high performance computing/2015/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/porn AND NOT gay/2000-2016/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2000/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2000/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2000/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2000/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2000/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2000/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2000/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2001/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2001/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2001/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2001/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2001/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2001/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2001/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2002/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2002/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2002/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2002/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2002/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2002/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2002/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2003/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2003/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2003/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2003/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2003/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2003/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2003/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2004/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2004/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2004/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2004/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2004/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2004/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2004/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2004/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2005/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2005/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2005/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2005/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2005/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2005/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2005/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2005/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2006/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2006/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2006/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2006/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2006/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2006/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2006/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2006/articles4000 - 4500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2006/articles4500 - 5000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2006/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2007/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2007/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2007/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2007/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2007/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2007/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2007/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2007/articles4000 - 4500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2007/articles4500 - 5000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2007/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2008/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2008/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2008/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2008/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2008/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2008/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2008/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2008/articles4000 - 4500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2008/articles4500 - 5000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2008/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009/articles4000 - 4500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009/articles4500 - 5000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles4000 - 4500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles4500 - 5000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2009_first/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2010/articles0 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2010/articles1000 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2010/articles1500 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2010/articles2000 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2010/articles2500 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2010/articles3000 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2010/articles3500 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2010/articles4000 - 4500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2010/articles4500 - 5000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2010/articles500 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles0 - 250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles1000 - 1250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles1250 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles1500 - 1750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles1750 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles2000 - 2250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles2250 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles250 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles2500 - 2750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles2750 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles3000 - 3250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles3250 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles3500 - 3750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles3750 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles4000 - 4250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles4250 - 4500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles4500 - 4750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles4750 - 5000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles500 - 750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2011/articles750 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles0 - 250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles1000 - 1250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles1250 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles1500 - 1750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles1750 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles2000 - 2250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles2250 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles250 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles2500 - 2750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles2750 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles3000 - 3250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles3250 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles3500 - 3750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles3750 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles4000 - 4250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles4250 - 4500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles4500 - 4750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles4750 - 5000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles500 - 750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2012/articles750 - 1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles0 - 250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles1000 - 1250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles1250 - 1500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles1500 - 1750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles1750 - 2000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles2000 - 2250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles2250 - 2500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles250 - 500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles2500 - 2750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles2750 - 3000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles3000 - 3250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles3250 - 3500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles3500 - 3750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles3750 - 4000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles4000 - 4250" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles4250 - 4500" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles4500 - 4750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles4750 - 5000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles500 - 750" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles_json/visualization/2013/articles750 - 1000" beforeDir="false" />
+    </list>
     <ignored path="CitateCrawler.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="CitateCrawler" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ScopusCrawler.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScopusCrawler.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PubMedRequest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1644" max-vertical-offset="4290">
-              <caret line="90" column="88" selection-start-line="87" selection-start-column="16" selection-end-line="90" selection-end-column="88" />
+            <state relative-caret-position="220">
+              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding>
-                <element signature="e#25#34#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/example.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pubmeddb_create.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09363296" vertical-offset="324" max-vertical-offset="946">
-              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+            <state relative-caret-position="132">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,182 +434,73 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/qwe.txt" />
         <option value="$PROJECT_DIR$/qwe.py" />
-        <option value="$PROJECT_DIR$/ScopusCrawler.py" />
         <option value="$PROJECT_DIR$/example.py" />
+        <option value="$PROJECT_DIR$/ScopusCrawler.py" />
+        <option value="$PROJECT_DIR$/pubmeddb_create.py" />
+        <option value="$PROJECT_DIR$/PubMedRequest.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1874" />
-    <option name="height" value="1092" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1875" />
+    <option name="height" value="1098" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CitateCrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CitateCrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CitateCrawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="CitateCrawler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CitateCrawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
-    <property name="FullScreen" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ScopusCrawler">
-    <configuration default="false" name="qwe" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CitateCrawler" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qwe.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ScopusCrawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CitateCrawler" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScopusCrawler.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CitateCrawler" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CitateCrawler" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CitateCrawler" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.pubmeddb_create">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -245,58 +520,111 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
+    <configuration name="PubMedRequest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CitateCrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CitateCrawler" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PubMedRequest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Nosetests">
+    <configuration name="ScopusCrawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CitateCrawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CitateCrawler" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScopusCrawler.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <method v="2" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Python.qwe" />
-      <item index="1" class="java.lang.String" itemvalue="Python.ScopusCrawler" />
+    <configuration name="pubmeddb_create" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CitateCrawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pubmeddb_create.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="qwe" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CitateCrawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qwe.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.qwe" />
+      <item itemvalue="Python.ScopusCrawler" />
+      <item itemvalue="Python.PubMedRequest" />
+      <item itemvalue="Python.pubmeddb_create" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.ScopusCrawler" />
-        <item index="1" class="java.lang.String" itemvalue="Python.qwe" />
+      <list>
+        <item itemvalue="Python.pubmeddb_create" />
+        <item itemvalue="Python.PubMedRequest" />
+        <item itemvalue="Python.ScopusCrawler" />
+        <item itemvalue="Python.qwe" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -305,33 +633,34 @@
       <changelist id="34cf9e91-4758-4f9d-8ee8-85851ebaf820" name="Default" comment="" />
       <created>1432822147113</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1432822147113</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1874" height="1092" extended-state="0" />
+    <frame x="-7" y="-7" width="1984" height="1166" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25188375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39916405" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1889117" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28019324" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3983573" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Changes" order="8" />
+      <window_info anchor="bottom" id="Application Servers" order="9" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -342,86 +671,79 @@
       <collection />
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/ScopusCrawler.py</url>
-          <line>168</line>
-          <option name="timeStamp" value="3" />
+          <line>51</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/ScopusCrawler.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/ScopusCrawler.py</url>
+          <line>74</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ScopusCrawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="924" max-vertical-offset="4312">
-          <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
-          <folding>
-            <element signature="e#25#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Anaconda3/Lib/json/decoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8052">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="506">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state>
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Anaconda3/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33272395" vertical-offset="5604" max-vertical-offset="7392">
-          <caret line="264" column="0" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$USER_HOME$/Anaconda520_360/Lib/threading.py" />
+    <entry file="file://$PROJECT_DIR$/articles_json/harmony search/2017-2018/articles0 - 250">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://C:/Anaconda3/Lib/json/decoder.py">
+    <entry file="file://$PROJECT_DIR$/articles_json/harmony search/2017-2018/articles250 - 500">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda520_360/Lib/json/decoder.py" />
+    <entry file="file://$USER_HOME$/Anaconda520_360/Lib/site-packages/mysql/connector/connection_cext.py" />
+    <entry file="file://$USER_HOME$/Anaconda520_360/Lib/site-packages/mysql/connector/cursor_cext.py" />
+    <entry file="file://$PROJECT_DIR$/example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31324005" vertical-offset="7057" max-vertical-offset="8052">
-          <caret line="336" column="0" selection-start-line="336" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="352">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ScopusCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1644" max-vertical-offset="4290">
-          <caret line="90" column="88" selection-start-line="87" selection-start-column="16" selection-end-line="90" selection-end-column="88" />
+        <state relative-caret-position="-3171">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#25#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example.py">
+    <entry file="file://$PROJECT_DIR$/PubMedRequest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09363296" vertical-offset="324" max-vertical-offset="946">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        <state relative-caret-position="220">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubmeddb_create.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
